@@ -14,7 +14,7 @@ MySQL上に適当なデータベースを作成してMySQL Workbench上から以
 </ul>
 
 #### 設定
-application.propertiesを開いて以下のプロパティを編集します。データベースにアクセスする権限のあるロールを持つユーザーを指定してください。
+アプリケーションプロパティファイル/src/main/resources/application.propertiesを開いて以下の項目に値を追加します。データベースにアクセスする権限のあるロールを持つユーザーを指定してください。
 <ul>
   <li>spring.datasource.username</li>
   <li>spring.datasource.password</li>

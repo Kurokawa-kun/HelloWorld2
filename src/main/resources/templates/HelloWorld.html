@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div th:text="|Hello ${familyName}!|"></div><br>
+        
+        <tr th:each="element : ${familyNameAll}">
+            <td th:text="|${element.Region}では${element.Ranking}番目に多い苗字です。およそ${element.Population}人です。|"></td><br>
+        </tr>
+        <br>
+        
+        <tr th:each="element : ${familyNameByGroup}">
+            <td th:text="|${element.Region}ではおよそ${element.Population}人です。|"></td><br>
+        </tr>
+        <br>
+    </body>
+</html>
